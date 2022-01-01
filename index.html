@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>Quote Generator</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" />
     <link
       rel="stylesheet"
@@ -13,8 +13,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="quote-container" id="quote-container">
+      <!-- Quote -->
+      <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
+        <span id="quote"></span>
+        <!-- Author -->
+        <div class="quote-author"><span id="author"></span></div>
+        <!-- buttons -->
+        <div class="button-container">
+          <button class="t-button" id="twitter" title="Tweet This!">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button id="new-quote">New Quote</button>
+        </div>
+        <!-- end button container -->
+      </div>
+      <!-- end quote text div -->
+    </div>
+    <!-- end quote container -->
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+    <!-- end Loader -->
     <!-- script -->
     <script src="script.js"></script>
-    <h1>Hello, world!</h1>
   </body>
 </html>
